@@ -27,34 +27,29 @@ $(function () {
     //////////////////////////////////
 
     // TODO 1 - Enable the Grid
-    toggleGrid();
-
+    //toggleGrid();
 
     // TODO 2 - Create Platforms
-    createPlatform(1350, 400, 50, 50, "Crimson");
-    createPlatform(100, 610, 500, 50, "DarkGreen");
-    createPlatform(700, 500, 600, 50, "MintCream");
-    createPlatform(510, 210, 210, 50, "Black");
-    createPlatform(1078, 310, 210, 50, "GoldenRod");
-     createPlatform(920,200, 210, 50, "Gray");
-
-
-
+    createPlatform(100, 500, 200, 20, "white");  //Start
+    createPlatform(400, 450, 100, 20, "yellow"); //middle jump
+    createPlatform(250, 350, 150, 20, "orange"); //back and left
+    createPlatform(50, 250, 250, 20, "blue");   //wide platform in the middle
+    createPlatform(500, 150, 100, 20, "green");  //top right last leap
 
     // TODO 3 - Create Collectables
-    createCollectable("steve", 1350, 50);
-    createCollectable("diamond", 200, 170, 0.5, 0.7);
-
-
-
-    
+    createCollectable("diamond", 300, 170, 0.5, 0.7);      //diamond floats away and gently bounces
+    createCollectable("grace", 450, 120, 0.2, 0.9);       //grace falls and bounces a lot
+    createCollectable("max", 100, 500, 0, 0);            //max doesn't fall or bounce
+    createCollectable("database", 200, 300, 0.7, 0.3);  //database falls and bounces
+    createCollectable("steve", 600, 100, 0.4, 0.6);    //steve added for balance :)
+   
     // TODO 4 - Create Cannons
-    createCannon("left", 200, 2000);
-createCannon("bottom", 300, 2000);
 
-
-    
-    
+    createCannon("top", 650, 1000);
+    createCannon("bottom", 450, 2000);
+    createCannon("left", 500, 3000);
+    createCannon("right", 400, 3000);
+   
     //////////////////////////////////
     // ONLY CHANGE ABOVE THIS POINT //
     //////////////////////////////////
